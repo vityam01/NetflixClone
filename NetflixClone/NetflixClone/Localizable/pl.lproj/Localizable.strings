@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  NetflixClone
+
+  Created by Vitya Mandryk on 21.05.2022.
+  
+*/
+
+
+//MARK: Bar Items Name
+
+"Bar.ItemsName.home" = "Dom";
+"Bar.ItemsName.upcoming" = "Wkrótce";
+"Bar.ItemsName.search" = "Najpopularniejsze wyszukiwania";
+"Bar.ItemsName.downloaded" = "Pobrano";
+
+
+//MARK: List Items Name
+
+"List.KindOfList.trendingMovies" = "Modne filmy";
+"List.KindOfList.trendingTv" = "Modne programy telewizyjne";
+"List.KindOfList.popular" = "Popularny";
+"List.KindOfList.upcoming" = "Nadchodzące filmy";
+"List.KindOfList.top" = "Najwyższa ocena";
+
+
+//MARK: Controllers Name
+
+"Constollers.Name.upcoming" = "WKRÓTCE";
+"Constollers.Name.search" = "SZUKAJ";
+"Constollers.Name.downloaded" = "ZAŁADOWANY";

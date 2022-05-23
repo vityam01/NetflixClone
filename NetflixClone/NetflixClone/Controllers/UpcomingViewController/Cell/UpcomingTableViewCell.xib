@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UpcomingTableViewCell" rowHeight="122" id="KGk-i7-Jjw" customClass="UpcomingTableViewCell" customModule="NetflixClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVI-MA-jtb">
+                        <rect key="frame" x="8" y="8" width="312" height="106"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BAb-sr-b6k">
+                        <rect key="frame" x="16" y="16" width="96" height="90"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heX-eN-9gW">
+                        <rect key="frame" x="127" y="51" width="133" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJq-bg-PbB">
+                        <rect key="frame" x="275" y="44" width="45" height="34"/>
+                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="play.circle" catalog="system">
+                            <color key="baseForegroundColor" red="0.6588235294" green="0.66000008580000002" blue="0.66000008580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="KVI-MA-jtb" secondAttribute="trailing" id="7B0-I1-ewz"/>
+                    <constraint firstItem="WJq-bg-PbB" firstAttribute="leading" secondItem="heX-eN-9gW" secondAttribute="trailing" constant="15" id="ANg-eI-Xrg"/>
+                    <constraint firstItem="WJq-bg-PbB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="B9X-5o-IJ6"/>
+                    <constraint firstItem="BAb-sr-b6k" firstAttribute="bottom" secondItem="KVI-MA-jtb" secondAttribute="bottom" constant="-8" id="Fye-PL-oKa"/>
+                    <constraint firstItem="KVI-MA-jtb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="GbV-Zt-mZ3"/>
+                    <constraint firstItem="BAb-sr-b6k" firstAttribute="leading" secondItem="KVI-MA-jtb" secondAttribute="leading" constant="8" id="Oba-4a-4Wi"/>
+                    <constraint firstItem="heX-eN-9gW" firstAttribute="leading" secondItem="BAb-sr-b6k" secondAttribute="trailing" constant="15" id="RBf-ce-gQW"/>
+                    <constraint firstAttribute="trailing" secondItem="WJq-bg-PbB" secondAttribute="trailing" id="Rek-Sp-zZY"/>
+                    <constraint firstItem="BAb-sr-b6k" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="aiN-VD-u4u"/>
+                    <constraint firstItem="WJq-bg-PbB" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.140625" id="jBQ-hu-hF8"/>
+                    <constraint firstAttribute="bottom" secondItem="KVI-MA-jtb" secondAttribute="bottom" constant="8" id="ndM-rO-yD1"/>
+                    <constraint firstItem="BAb-sr-b6k" firstAttribute="top" secondItem="KVI-MA-jtb" secondAttribute="top" constant="8" id="pyB-ei-J4W"/>
+                    <constraint firstItem="heX-eN-9gW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rHr-FB-ZQP"/>
+                    <constraint firstItem="KVI-MA-jtb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ta9-R4-Psr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="customContentView" destination="KVI-MA-jtb" id="adT-zw-Ocn"/>
+                <outlet property="filmPicture" destination="BAb-sr-b6k" id="P4l-gh-iIo"/>
+                <outlet property="namelabel" destination="heX-eN-9gW" id="QC8-1S-yaj"/>
+                <outlet property="playButton" destination="WJq-bg-PbB" id="RAq-V6-Ltk"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

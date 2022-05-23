@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitlePreviewViewController" customModule="NetflixClone" customModuleProvider="target">
+            <connections>
+                <outlet property="downloadButton" destination="AeE-dZ-25F" id="cEf-e1-P04"/>
+                <outlet property="overviewLabel" destination="cCP-AR-Wv5" id="wFu-nx-ieP"/>
+                <outlet property="titleName" destination="hsu-h5-FwT" id="n5l-y8-o8G"/>
+                <outlet property="videoView" destination="jBP-zk-C03" id="Brt-BS-UDj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBP-zk-C03">
+                    <rect key="frame" x="0.0" y="44" width="414" height="313.5"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsu-h5-FwT">
+                    <rect key="frame" x="15" y="372.5" width="384" height="25"/>
+                    <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="25"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeE-dZ-25F">
+                    <rect key="frame" x="145" y="470.5" width="124" height="40"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3ok-Fp-hvk"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Download">
+                        <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="19"/>
+                    </buttonConfiguration>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCP-AR-Wv5">
+                    <rect key="frame" x="15" y="422.5" width="384" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="Ci9-ua-m0M"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jBP-zk-C03" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2mH-pP-YMx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cCP-AR-Wv5" secondAttribute="trailing" constant="15" id="FHT-cF-Gdo"/>
+                <constraint firstItem="AeE-dZ-25F" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.3" id="JIK-dJ-A58"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hsu-h5-FwT" secondAttribute="trailing" constant="15" id="KPD-GX-amw"/>
+                <constraint firstItem="hsu-h5-FwT" firstAttribute="top" secondItem="jBP-zk-C03" secondAttribute="bottom" constant="15" id="KSY-Cm-Jda"/>
+                <constraint firstItem="cCP-AR-Wv5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="Q2d-Ck-Dmx"/>
+                <constraint firstItem="jBP-zk-C03" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.35" id="XWq-Xn-s3d"/>
+                <constraint firstItem="hsu-h5-FwT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="cUy-ky-dcQ"/>
+                <constraint firstItem="AeE-dZ-25F" firstAttribute="top" secondItem="cCP-AR-Wv5" secondAttribute="bottom" constant="25" id="iPw-hE-Tv7"/>
+                <constraint firstItem="cCP-AR-Wv5" firstAttribute="top" secondItem="hsu-h5-FwT" secondAttribute="bottom" constant="25" id="ieS-a9-kTg"/>
+                <constraint firstItem="jBP-zk-C03" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="laI-tI-hsV"/>
+                <constraint firstItem="AeE-dZ-25F" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sHQ-hA-i1d"/>
+                <constraint firstItem="jBP-zk-C03" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="yy1-YP-0W3"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
